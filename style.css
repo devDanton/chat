@@ -13,8 +13,9 @@
   --status-color: #00B37E;
 }
 
-body * {
-  /* border: 1px solid red; */
+html,
+body {
+  height: 100vh;
 }
 
 body {
@@ -23,7 +24,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
-  height: 100vh;
   padding: 32px 0;
 }
 
