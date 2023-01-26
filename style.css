@@ -13,11 +13,6 @@
   --status-color: #00B37E;
 }
 
-html,
-body {
-  height: 100vh;
-}
-
 body {
   background: var(--bg-body);
   color: var(--text-color);
@@ -25,6 +20,8 @@ body {
   font-size: 12px;
   font-weight: 400;
   padding: 32px 0;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 #container {
