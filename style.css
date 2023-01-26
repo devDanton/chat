@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-body: #1A1924;
+  --bg-msg-destinatario: #633BBC;
+  --bg-msg-remetente: #07847E;
+  --bg-cx-texto: #282843;
+  --text-color: #E1E1E6;
+  --status-color: #00B37E;
+}
+
+body * {
+  /* border: 1px solid red; */
+}
+
+body {
+  background: var(--bg-body);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 100vh;
+}
+
+#container {
+  margin: 32px 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 100%;
+}
+
+#heading {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#heading p:nth-child(2) {
+  text-align: center;
+}
+
+#avatar {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+#avatar img {
+  height: 48px;
+  width: 48px;
+  border-radius: 999px;
+}
+
+
+#destinatario {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#destinatario p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#status {
+  display: flex;
+  align-items: center;
+  color: var(--status-color);
+  font-size: 12px;
+  line-height: 14px;
+  gap: 4px;
+}
+
+#status div {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background: var(--status-color);
+}
+
+.mensagem {
+  padding: 14px;
+  border-radius: 0px 8px 8px 8px;
+  width: fit-content;
+}
+
+.destinatario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.destinatario p {
+  text-align: start;
+}
+
+.destinatario div p {
+  background: var(--bg-msg-destinatario);
+}
+
+.remetente {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.remetente div p {
+  background: var(--bg-msg-remetente);
+}
+
+.destinatario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.destinatario p {
+  text-align: start;
+}
+
+.destinatario div p {
+  background: var(--bg-msg-destinatario);
+}
+
+#cx-texto {
+  padding: 24px 0 0;
+}
+
+#cx-texto div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  width: 100%;
+  height: 52px;
+  border-radius: 999px;
+  background: var(--bg-cx-texto);
+  justify-content: space-between;
+}
+
+#cx-texto input {
+  background: var(--bg-cx-texto);
+  border-style: none;
+  color: var(--text-color);
+  width: 100%;
+}
+
+#cx-texto textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#cx-texto input ion-icon {}
